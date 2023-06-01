@@ -5,4 +5,4 @@ weight: 3
 
 ---
 
-1)	Download the sample application binary's and place in the c:/tmp folder. https://portal.vfunction.com/file/3408e5daaf00948a0c3f7b36ad1242c9/82f2c76a-70bb-47de-85fe-f657786fd5b7/fineract-provider-1.5.1-55949bf8.jar
+1)	Download the sample application binary's and place in the c:/tmp folder. https://portal.vfunction.com/file/d94e37733336c54b4b59135587b8b8f2/a3039841-02a8-4e24-a68c-265efb161565/samples.zip
