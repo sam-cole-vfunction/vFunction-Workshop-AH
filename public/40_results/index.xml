@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Results on English</title>
+    <link>/40_results.html</link>
+    <description>Recent content in The Results on English</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/40_results/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech Debt Metrics</title>
+      <link>/40_results/01_metrics.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/40_results/01_metrics.html</guid>
+      <description>First select the &amp;lsquo;Tech Debt Metrics&amp;rsquo; and mouse over each Metric. The Assessment Report shows the level of technical debt and architectural complexity in your application. Through static analysis, the report exposes how the dependencies between the classes affect the modularity of the code, the risk of impacting parts of the application and the overall level of technical debt. This level of debt affects the rate and cost of innovation and is a key business measure for the application.</description>
+    </item>
+    
+    <item>
+      <title>Cost of Innovation</title>
+      <link>/40_results/02_techdebt.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/40_results/02_techdebt.html</guid>
+      <description>Select Tab ’Cost of Innovation’ This chart shows how the level of technical debt affects the cost of innovation for the application. It tries to assess if one would spend $1 on this application, how much of it will actually be put to innovation, and how much to repay the technical debt within the application. It also details the classes that contribute the most to the overall debt, by adding complexity and risk throughout the application.</description>
+    </item>
+    
+    <item>
+      <title>Aging Frameworks</title>
+      <link>/40_results/03_ageingframeworks.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/40_results/03_ageingframeworks.html</guid>
+      <description>Select Tab ‘Aging Frameworks’ An important part of technical debt is the aging frameworks that are used in the application. Aging frameworks are a source of security risk, and indicate an increased effort to upgrade the frameworks to their latest versions. The use of some aging frameworks will also block the application from being considered cloud-native. This table shows the names of the jars of the frameworks that are used in the application.</description>
+    </item>
+    
+    <item>
+      <title>History</title>
+      <link>/40_results/04_history.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/40_results/04_history.html</guid>
+      <description>Select Tab ‘History’ By running the assessment over a period of time we can identify if the Technical Debt is increasing. This is a good indicator that this application has a higher business value as active development is taking place.</description>
+    </item>
+    
+    <item>
+      <title>Download</title>
+      <link>/40_results/05_download.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/40_results/05_download.html</guid>
+      <description> You can download a copy of the report by clicking the download icon top right </description>
+    </item>
+    
+  </channel>
+</rss>

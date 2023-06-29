@@ -22,7 +22,7 @@ app:
 ![image](/images/AH-OffA-Edit.png)
 
 2)	Save the file
-3)	Use the viper-cli.bat script to perform the assessment. Open a new command window navigate to c:\temp and run viper-cli.bat. This will use the myapp.yaml file as input and create a .json file with the output.
+3)	Use the viper-cli.bat script to perform the assessment. Open a new command window, navigate to c:\temp and run viper-cli.bat. This will use the myapp.yaml file as input and create a .json file with the output.
 
 ![image](/images/AH-OffA-Run.png)
 

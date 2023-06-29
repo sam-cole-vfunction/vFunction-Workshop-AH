@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Application Modernization Assessment with vFunction Assessment Hub on English</title>
+    <link>/</link>
+    <description>Recent content in Application Modernization Assessment with vFunction Assessment Hub on English</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deploy the Workshop</title>
+      <link>/10_setup/01_build.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/10_setup/01_build.html</guid>
+      <description>Run the installation package to deploy the Workshop resources Log in to your AWS Account
+Open the AWS CloudShell (icon is on top right toolbar)
+Download the workshop installation package from the vFunction portal using the command:
+curl -o vfunction-workshop-aws-installation.tgz https://portal.vfunction.com/file/cb568da43a06dd7f05bdd4c00fa75256/3cafd452-bcfa-4a03-b745-1d09bb2355df/vfunction-workshop-aws-installation.tgz Unpack the installation package tar zxvf vfunction-workshop-aws-installation.tgz Edit the file ./config/installation.yaml file: vim ~/vfunction-workshop/config/installation.yaml Set the region to which the resources will be deployed- you can use any US region, however, if you want to do the Appendix for using AWS Migration Hub Refactor Spaces, make sure that this service is available in the region you choose by searching Refactor Spaces in this region.</description>
+    </item>
+    
+    <item>
+      <title>What is vFunction?</title>
+      <link>/00_intro/01_whatisvfunction.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/00_intro/01_whatisvfunction.html</guid>
+      <description>Modernize and refactor monolithic Java and .NET applications into microservices. The vFunction platform enables software architects and developers to rapidly and incrementally modernize their legacy application portfolios, and empower technology leaders to unlock the benefits of Cloud. Combining static and dynamic analysis, data science, and automation the vFunction platform is an intelligent, metrics based, bottom-up design platform to assess, analyze, and design micro/mini-services. It automates and accelerates error-prone tedious dev tasks including copying sources, removing dead-code, minimizing properties &amp;amp; configuration files, as well as auto-refactoring high debt classes.</description>
+    </item>
+    
+    <item>
+      <title>Setup Environment</title>
+      <link>/10_setup/02_java.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/10_setup/02_java.html</guid>
+      <description>Download the vFunction viper-cli package to the Workshop windows VM: The Chrome and the URL below https://app.vfunction.com/downloads/vfunction-tools/viper-cli.zip
+Uncompress the zip file to the c:/tmp folder
+This workshop desktop has 2 java versions so we need to set the Java_Home variable to use Java 7. Use an Administrator command prompt to set the JAVA_HOME variable:
+set /m JAVA_HOME &amp;#34;C:\Users\workshop\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.1.v20211116-1657\jre&amp;#34; Close the window for the change to take affect</description>
+    </item>
+    
+    <item>
+      <title>Download Samples</title>
+      <link>/10_setup/03_samples.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/10_setup/03_samples.html</guid>
+      <description> Download the sample application binaries and place them in the c:/tmp folder. https://portal.vfunction.com/file/d94e37733336c54b4b59135587b8b8f2/a3039841-02a8-4e24-a68c-265efb161565/samples.zip </description>
+    </item>
+    
+    <item>
+      <title>Tech Debt Metrics</title>
+      <link>/40_results/01_metrics.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/40_results/01_metrics.html</guid>
+      <description>First select the &amp;lsquo;Tech Debt Metrics&amp;rsquo; and mouse over each Metric. The Assessment Report shows the level of technical debt and architectural complexity in your application. Through static analysis, the report exposes how the dependencies between the classes affect the modularity of the code, the risk of impacting parts of the application and the overall level of technical debt. This level of debt affects the rate and cost of innovation and is a key business measure for the application.</description>
+    </item>
+    
+    <item>
+      <title>Cost of Innovation</title>
+      <link>/40_results/02_techdebt.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/40_results/02_techdebt.html</guid>
+      <description>Select Tab ’Cost of Innovation’ This chart shows how the level of technical debt affects the cost of innovation for the application. It tries to assess if one would spend $1 on this application, how much of it will actually be put to innovation, and how much to repay the technical debt within the application. It also details the classes that contribute the most to the overall debt, by adding complexity and risk throughout the application.</description>
+    </item>
+    
+    <item>
+      <title>Create a workspace</title>
+      <link>/30_java_assessment/01_createworkspace.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/30_java_assessment/01_createworkspace.html</guid>
+      <description>First we create a new application in vFunction for the application we will assess for Modernization.
+In the vFunction UI, Click the ‘My Dashboard’ Menu top left and select ‘Add Application’ (You might need to close any open pop-ups first using the X) In the dialog box add the application name, select the type and add the classes to include in the assessment. You can add multiple package names if needed.</description>
+    </item>
+    
+    <item>
+      <title>Run the Assessment</title>
+      <link>/30_java_assessment/02_runassessment.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/30_java_assessment/02_runassessment.html</guid>
+      <description>Run the Assessment We will use the vFunction workshop sandbox to complete the assessment, connect to the Windows VM.
+Use Notepad to edit the myapp.yaml file (C:\tmp\myapp.yaml). Add the names of each binary to assess one per line and the packages/classes to include in the assessment. --- archives: - c:\tmp\fineract-provider-1.5.1-55949bf8.jar app: included_packages: - org.apache.fineract. Save the file Use the viper-cli.bat script to perform the assessment. Open a new command window, navigate to c:\temp and run viper-cli.</description>
+    </item>
+    
+    <item>
+      <title>Aging Frameworks</title>
+      <link>/40_results/03_ageingframeworks.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/40_results/03_ageingframeworks.html</guid>
+      <description>Select Tab ‘Aging Frameworks’ An important part of technical debt is the aging frameworks that are used in the application. Aging frameworks are a source of security risk, and indicate an increased effort to upgrade the frameworks to their latest versions. The use of some aging frameworks will also block the application from being considered cloud-native. This table shows the names of the jars of the frameworks that are used in the application.</description>
+    </item>
+    
+    <item>
+      <title>Upload the Results </title>
+      <link>/30_java_assessment/03_uploadtheresults.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/30_java_assessment/03_uploadtheresults.html</guid>
+      <description>Upload the Results Switch to the vFunction UI to import the results. Click the ‘Import’ button on the Controllers screen for the Fineract1 application Click file and Select the Assessment result file c:\temp\Fineract*.json and click Open Click Import to complete and process the assessment Results. It may take a few seconds to process the results. Click ‘View Assessment Report’ to see the results</description>
+    </item>
+    
+    <item>
+      <title>History</title>
+      <link>/40_results/04_history.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/40_results/04_history.html</guid>
+      <description>Select Tab ‘History’ By running the assessment over a period of time we can identify if the Technical Debt is increasing. This is a good indicator that this application has a higher business value as active development is taking place.</description>
+    </item>
+    
+    <item>
+      <title>Download</title>
+      <link>/40_results/05_download.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/40_results/05_download.html</guid>
+      <description> You can download a copy of the report by clicking the download icon top right </description>
+    </item>
+    
+  </channel>
+</rss>

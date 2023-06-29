@@ -44,15 +44,15 @@ Wait for the script to complete
 
 ### Setup Remote Desktop to Workshop Windows VM
 
-1. Switch to the EC2 Instances page in the region you set to deploy the workshop
+1. Switch to the EC2 instances page in the region you set to deploy the workshop
 
 2. Open the EC2 instance with the name starting with workshop-windows (should be in running state) and copy its public IPv4 Address
 
 3. Open your Remote Desktop Protocol (RDP) client and paste the IP as the Host Name or Address
 
-4. Start the RDP session. The user name is ```workshop``` the password is ```vFunction2021!```
+4. Start the RDP session. User name: ```workshop``` the Password: ```vFunction2021!```
 
-5. If prompted, approve the certificate to access the remote machine
+5. If prompted, approve the certificate to access the remote machine.
 
 6. You should now see the Windows Desktop running on the Dev VM.
 
@@ -64,7 +64,7 @@ Wait for the script to complete
 
 3. In the PuTTY dialog, enter the *private* IP address of the Linux VM and click Open
 
-4. Login using the same credentials (login: ```workshop``` password:```vFunction2021!```)
+4. Login using the same credentials (login: ```workshop``` and password:```vFunction2021!```)
 
 ### Login to the vFunction server
 
@@ -76,7 +76,7 @@ To login to the platform:
 
 2. Type the IP Address of the Linux VM
 
-3. Login with the e-mail you entered in the installation.yaml file. The password is ```vFunction2021!```
+3. Login with the email you entered in the installation.yaml file. The password is ```vFunction2021!```
    
    You should see a screen similar to:
 

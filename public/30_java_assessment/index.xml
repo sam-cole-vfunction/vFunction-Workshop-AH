@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Application Assessment  on English</title>
+    <link>/30_java_assessment.html</link>
+    <description>Recent content in Application Assessment  on English</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/30_java_assessment/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create a workspace</title>
+      <link>/30_java_assessment/01_createworkspace.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/30_java_assessment/01_createworkspace.html</guid>
+      <description>First we create a new application in vFunction for the application we will assess for Modernization.
+In the vFunction UI, Click the ‘My Dashboard’ Menu top left and select ‘Add Application’ (You might need to close any open pop-ups first using the X) In the dialog box add the application name, select the type and add the classes to include in the assessment. You can add multiple package names if needed.</description>
+    </item>
+    
+    <item>
+      <title>Run the Assessment</title>
+      <link>/30_java_assessment/02_runassessment.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/30_java_assessment/02_runassessment.html</guid>
+      <description>Run the Assessment We will use the vFunction workshop sandbox to complete the assessment, connect to the Windows VM.
+Use Notepad to edit the myapp.yaml file (C:\tmp\myapp.yaml). Add the names of each binary to assess one per line and the packages/classes to include in the assessment. --- archives: - c:\tmp\fineract-provider-1.5.1-55949bf8.jar app: included_packages: - org.apache.fineract. Save the file Use the viper-cli.bat script to perform the assessment. Open a new command window, navigate to c:\temp and run viper-cli.</description>
+    </item>
+    
+    <item>
+      <title>Upload the Results </title>
+      <link>/30_java_assessment/03_uploadtheresults.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/30_java_assessment/03_uploadtheresults.html</guid>
+      <description>Upload the Results Switch to the vFunction UI to import the results. Click the ‘Import’ button on the Controllers screen for the Fineract1 application Click file and Select the Assessment result file c:\temp\Fineract*.json and click Open Click Import to complete and process the assessment Results. It may take a few seconds to process the results. Click ‘View Assessment Report’ to see the results</description>
+    </item>
+    
+  </channel>
+</rss>

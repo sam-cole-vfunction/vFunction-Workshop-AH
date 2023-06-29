@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Setting Set up on English</title>
+    <link>/10_setup.html</link>
+    <description>Recent content in Setting Set up on English</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/10_setup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deploy the Workshop</title>
+      <link>/10_setup/01_build.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/10_setup/01_build.html</guid>
+      <description>Run the installation package to deploy the Workshop resources Log in to your AWS Account
+Open the AWS CloudShell (icon is on top right toolbar)
+Download the workshop installation package from the vFunction portal using the command:
+curl -o vfunction-workshop-aws-installation.tgz https://portal.vfunction.com/file/cb568da43a06dd7f05bdd4c00fa75256/3cafd452-bcfa-4a03-b745-1d09bb2355df/vfunction-workshop-aws-installation.tgz Unpack the installation package tar zxvf vfunction-workshop-aws-installation.tgz Edit the file ./config/installation.yaml file: vim ~/vfunction-workshop/config/installation.yaml Set the region to which the resources will be deployed- you can use any US region, however, if you want to do the Appendix for using AWS Migration Hub Refactor Spaces, make sure that this service is available in the region you choose by searching Refactor Spaces in this region.</description>
+    </item>
+    
+    <item>
+      <title>Setup Environment</title>
+      <link>/10_setup/02_java.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/10_setup/02_java.html</guid>
+      <description>Download the vFunction viper-cli package to the Workshop windows VM: The Chrome and the URL below https://app.vfunction.com/downloads/vfunction-tools/viper-cli.zip
+Uncompress the zip file to the c:/tmp folder
+This workshop desktop has 2 java versions so we need to set the Java_Home variable to use Java 7. Use an Administrator command prompt to set the JAVA_HOME variable:
+set /m JAVA_HOME &amp;#34;C:\Users\workshop\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.1.v20211116-1657\jre&amp;#34; Close the window for the change to take affect</description>
+    </item>
+    
+    <item>
+      <title>Download Samples</title>
+      <link>/10_setup/03_samples.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/10_setup/03_samples.html</guid>
+      <description> Download the sample application binaries and place them in the c:/tmp folder. https://portal.vfunction.com/file/d94e37733336c54b4b59135587b8b8f2/a3039841-02a8-4e24-a68c-265efb161565/samples.zip </description>
+    </item>
+    
+  </channel>
+</rss>

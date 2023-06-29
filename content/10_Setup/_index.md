@@ -1,5 +1,5 @@
 ---
-title: "Setting Started"
+title: "Setting Set up"
 chapter: true
 weight: 10
 

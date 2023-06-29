@@ -1,5 +1,5 @@
 ---
-title: "Ageing Frameworks" # MODIFY THIS TITLE IF APPLICABLE
+title: "Aging Frameworks" # MODIFY THIS TITLE IF APPLICABLE
 chapter: false
 weight: 30
 ---

@@ -1,0 +1,155 @@
+[
+{
+	"uri": "/",
+	"title": "Application Modernization Assessment with vFunction Assessment Hub",
+	"tags": [],
+	"description": "",
+	"content": "Application Modernization Assessment with vFunction Assessment Hub The AWS Modernization Phases describe the 3 steps to achieve Application Modernization: Assess, Modernize and Manage.\nThe first step in an organization\u0026rsquo;s modernization journey is to analyze the existing portfolio and identify applications that need to be modernized. This workshop will cover this step.\nBy using the approach described in this workshop, you will be able to identify and prioritize applications that will benefit from refactoring into a services architecture and build a business case.\n"
+},
+{
+	"uri": "/10_setup/01_build.html",
+	"title": "Deploy the Workshop",
+	"tags": [],
+	"description": "",
+	"content": "Run the installation package to deploy the Workshop resources Log in to your AWS Account\nOpen the AWS CloudShell (icon is on top right toolbar)\nDownload the workshop installation package from the vFunction portal using the command:\ncurl -o vfunction-workshop-aws-installation.tgz https://portal.vfunction.com/file/cb568da43a06dd7f05bdd4c00fa75256/3cafd452-bcfa-4a03-b745-1d09bb2355df/vfunction-workshop-aws-installation.tgz Unpack the installation package tar zxvf vfunction-workshop-aws-installation.tgz Edit the file ./config/installation.yaml file: vim ~/vfunction-workshop/config/installation.yaml Set the region to which the resources will be deployed- you can use any US region, however, if you want to do the Appendix for using AWS Migration Hub Refactor Spaces, make sure that this service is available in the region you choose by searching Refactor Spaces in this region.\nFill in your org_name (must be shorter than 50 chars) and email (e.g., \u0026ldquo;my company\u0026rdquo; as org_name and \u0026ldquo;myname@company.net\u0026rdquo; as email)\nRun the installation:\nbash ~/vfunction-workshop/install.sh Wait for the script to complete\nSetup Remote Desktop to Workshop Windows VM Switch to the EC2 instances page in the region you set to deploy the workshop\nOpen the EC2 instance with the name starting with workshop-windows (should be in running state) and copy its public IPv4 Address\nOpen your Remote Desktop Protocol (RDP) client and paste the IP as the Host Name or Address\nStart the RDP session. User name: workshop the Password: vFunction2021!\nIf prompted, approve the certificate to access the remote machine.\nYou should now see the Windows Desktop running on the Dev VM.\nAccess the Workshop Linux VM Copy the private IP address of the Worskhop-Linux VM from the AWS console\nIn the Windows VM (Remote Desktop), run PuTTY (icon is on the desktop)\nIn the PuTTY dialog, enter the private IP address of the Linux VM and click Open\nLogin using the same credentials (login: workshop and password:vFunction2021!)\nLogin to the vFunction server The vFunction platform installation was automated by the Workshop Installation package.\nTo login to the platform:\nOpen Chrome in the Windows VM (Remote Desktop)\nType the IP Address of the Linux VM\nLogin with the email you entered in the installation.yaml file. The password is vFunction2021!\nYou should see a screen similar to:\nYou are now ready to proceed.\n"
+},
+{
+	"uri": "/00_intro.html",
+	"title": "Introduction",
+	"tags": [],
+	"description": "",
+	"content": "Introduction In this workshop you will learn how to assess applications either to be Modernized to AWS or applications already migrated to AWS but not yet utilizing serverless technologies.\nWorkshop Agenda Deploy the vFunction sandbox into your AWS account. Assess an application for modernization. Review the assessment results. Compare multiple applications in a portfolio Learning Objectives Learn how to use vFunction Assessment Hub to assess applications. Identify applications for modernization Define a modernization plan by prioritizing applications Build a business case for modernization Who should attend Application owner’s, architect’s and developers looking to modernize applications\nBackground knowledge for the workshop We start from scratch so no knowledge is needed to complete the workshop.\nExpected Time The workshop should take approximately 1 hour to complete, however you can pause at any time. Your vFunction trial license will expire after 14 days.\nCost Unless you are attending an AWS hosted event you will need to deploy the workshop into your own AWS account. You will be responsible for any hosting costs, these are expected to be approximately 25 USD per month.\nThe examples and sample code provided in this workshop are intended to be consumed as instructional content. These will help you understand how various AWS services can be architected to build a solution while demonstrating best practices along the way. These examples are not intended for use in production environments.\n"
+},
+{
+	"uri": "/00_intro/01_whatisvfunction.html",
+	"title": "What is vFunction?",
+	"tags": [],
+	"description": "",
+	"content": "Modernize and refactor monolithic Java and .NET applications into microservices. The vFunction platform enables software architects and developers to rapidly and incrementally modernize their legacy application portfolios, and empower technology leaders to unlock the benefits of Cloud. Combining static and dynamic analysis, data science, and automation the vFunction platform is an intelligent, metrics based, bottom-up design platform to assess, analyze, and design micro/mini-services. It automates and accelerates error-prone tedious dev tasks including copying sources, removing dead-code, minimizing properties \u0026amp; configuration files, as well as auto-refactoring high debt classes. vFunction provides a repeatable and scalable platform for continuous modernization, enabling organizations to create a CI/CD integrated modernization factory model.\nThe vFunction Platform contains 3 integrated modules:\nAssessment Hub Modernisation Hub Continue Modernisation Manager "
+},
+{
+	"uri": "/10_setup/02_java.html",
+	"title": "Setup Environment",
+	"tags": [],
+	"description": "",
+	"content": " Download the vFunction viper-cli package to the Workshop windows VM: The Chrome and the URL below https://app.vfunction.com/downloads/vfunction-tools/viper-cli.zip\nUncompress the zip file to the c:/tmp folder\nThis workshop desktop has 2 java versions so we need to set the Java_Home variable to use Java 7. Use an Administrator command prompt to set the JAVA_HOME variable:\nset /m JAVA_HOME \u0026#34;C:\\Users\\workshop\\.p2\\pool\\plugins\\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.1.v20211116-1657\\jre\u0026#34; Close the window for the change to take affect\n"
+},
+{
+	"uri": "/10_setup/03_samples.html",
+	"title": "Download Samples",
+	"tags": [],
+	"description": "",
+	"content": " Download the sample application binaries and place them in the c:/tmp folder. https://portal.vfunction.com/file/d94e37733336c54b4b59135587b8b8f2/a3039841-02a8-4e24-a68c-265efb161565/samples.zip "
+},
+{
+	"uri": "/10_setup.html",
+	"title": "Setting Set up",
+	"tags": [],
+	"description": "",
+	"content": "\nSetup AWS workshop environment In this section, you will create and deploy the necessary AWS services required for this workshop by running a Terraform package.\nThe below diagram depicts the AWS services provisioned the workshop installation package and their usage (the xxx in the names represent a variable string):\n"
+},
+{
+	"uri": "/40_results/01_metrics.html",
+	"title": "Tech Debt Metrics",
+	"tags": [],
+	"description": "",
+	"content": " First select the \u0026lsquo;Tech Debt Metrics\u0026rsquo; and mouse over each Metric. The Assessment Report shows the level of technical debt and architectural complexity in your application. Through static analysis, the report exposes how the dependencies between the classes affect the modularity of the code, the risk of impacting parts of the application and the overall level of technical debt. This level of debt affects the rate and cost of innovation and is a key business measure for the application. Complexity is the degree to which class dependencies are entangled between themselves, reducing the level of modularity of the code. Risk is correlated to the length of the dependencies. How likely is a change in the application to affect a seemingly unrelated part of it. The debt is an overall calculation, taking into account complexity, risk and other factors to provide a single metric to prioritize the application for modernization. The average of these three metrics in the portfolio of applications is presented to further help with the prioritization.\n"
+},
+{
+	"uri": "/40_results/02_techdebt.html",
+	"title": "Cost of Innovation",
+	"tags": [],
+	"description": "",
+	"content": " Select Tab ’Cost of Innovation’ This chart shows how the level of technical debt affects the cost of innovation for the application. It tries to assess if one would spend $1 on this application, how much of it will actually be put to innovation, and how much to repay the technical debt within the application. It also details the classes that contribute the most to the overall debt, by adding complexity and risk throughout the application. The post-refactor calculation assesses the level of technical debt assuming these classes were refactored, and their level of debt reduced.\nvFunction estimates the man months it would take to re-write this application.\nClick the red outer circle to view the 10 highest debt classes "
+},
+{
+	"uri": "/30_java_assessment/01_createworkspace.html",
+	"title": "Create a workspace",
+	"tags": [],
+	"description": "",
+	"content": "First we create a new application in vFunction for the application we will assess for Modernization.\nIn the vFunction UI, Click the ‘My Dashboard’ Menu top left and select ‘Add Application’ (You might need to close any open pop-ups first using the X) In the dialog box add the application name, select the type and add the classes to include in the assessment. You can add multiple package names if needed. Only the applications core packages should be included. Name=Fineract1\rType=Java\rPackages=org.apache.fineract. Click ‘Create’ to add the new application\nvFunction will create the new application and present a dialog with instructions for adding an agent to the application. This agent can be used to perform both Static and Dynamic analysis. As we are going to run the assessment offline this is not needed so close the dialog with the X top right.\n"
+},
+{
+	"uri": "/30_java_assessment/02_runassessment.html",
+	"title": "Run the Assessment",
+	"tags": [],
+	"description": "",
+	"content": "Run the Assessment We will use the vFunction workshop sandbox to complete the assessment, connect to the Windows VM.\nUse Notepad to edit the myapp.yaml file (C:\\tmp\\myapp.yaml). Add the names of each binary to assess one per line and the packages/classes to include in the assessment. --- archives: - c:\\tmp\\fineract-provider-1.5.1-55949bf8.jar app: included_packages: - org.apache.fineract. Save the file Use the viper-cli.bat script to perform the assessment. Open a new command window, navigate to c:\\temp and run viper-cli.bat. This will use the myapp.yaml file as input and create a .json file with the output. The assessment is completed, we can now upload the results in the vFunction UI to see the results.\n"
+},
+{
+	"uri": "/40_results/03_ageingframeworks.html",
+	"title": "Aging Frameworks",
+	"tags": [],
+	"description": "",
+	"content": " Select Tab ‘Aging Frameworks’ An important part of technical debt is the aging frameworks that are used in the application. Aging frameworks are a source of security risk, and indicate an increased effort to upgrade the frameworks to their latest versions. The use of some aging frameworks will also block the application from being considered cloud-native. This table shows the names of the jars of the frameworks that are used in the application. Each framework, based on its current and newest version receives a tag of either modern, aging, or unknown, in case the specific jar was not found in the vFunction database. It also shows the total number of classes that were scanned by the static analysis, and the minimal Java version that these classes were compiled with.\n"
+},
+{
+	"uri": "/30_java_assessment.html",
+	"title": "Application Assessment ",
+	"tags": [],
+	"description": "",
+	"content": "Application Assessment Running an assessment offline is quick and non-intrusive as we don’t need to access the application runtime or source code. The assessment can be run from a user\u0026rsquo;s workstation.\nFor the assessment we need:\nThe application binaries e.g. jar/war/ear Create a workspace A Java 7 and above runtime The vFunction viper-cli package You can use Assessment Hub Express SaaS to review your assessment results if you don\u0026rsquo;t have a vFunction Server\n"
+},
+{
+	"uri": "/30_java_assessment/03_uploadtheresults.html",
+	"title": "Upload the Results ",
+	"tags": [],
+	"description": "",
+	"content": "Upload the Results Switch to the vFunction UI to import the results. Click the ‘Import’ button on the Controllers screen for the Fineract1 application Click file and Select the Assessment result file c:\\temp\\Fineract*.json and click Open Click Import to complete and process the assessment Results. It may take a few seconds to process the results. Click ‘View Assessment Report’ to see the results\n"
+},
+{
+	"uri": "/40_results/04_history.html",
+	"title": "History",
+	"tags": [],
+	"description": "",
+	"content": " Select Tab ‘History’ By running the assessment over a period of time we can identify if the Technical Debt is increasing. This is a good indicator that this application has a higher business value as active development is taking place.\n"
+},
+{
+	"uri": "/40_results.html",
+	"title": "The Results",
+	"tags": [],
+	"description": "",
+	"content": "The Results vFunction Assessment Hub analyzes the technical debt of your monolithic applications, accurately identifies the source of that debt, and measures its negative impact on innovation\nAnalyze Your Application Estate vFunction Assessment Hub is a purpose-built modernization assessment platform for decision-makers. The data-driven solution analyzes and condenses data into three high-level indicators that allow you to assess, prioritize and drive immediate action on your modernization projects. vFunction Assessment Hub analyzes the technical debt of your monolithic applications, accurately identifies the source of that debt, and measures its negative impact on innovation. These metrics provide key ROI and TCO measurements critical for more effective and compelling application modernization business cases.\nPrioritize Apps for Modernization With analysis algorithms trained from hundreds of monolithic applications, vFunction Assessment Hub gives organizations a clear picture of how much per dollar invested into the application goes towards actual innovation, versus how much goes towards managing technical debt. By further identifying the top 10 debt classes, you can see the benefits gained by simply refactoring those alone. When combined with the business value of each of these applications, organizations can stack-rank which applications to modernize first, quantify the complexity, and clearly assess the benefits of modernization.\nBuild a Data-Driven Business Case vFunction Assessment Hub delivers deep modernization metrics to build data-driven business cases for modernization. vFunction measures app complexity based on code modularity and dependency entanglements, analyzes the risk of changes impacting stability based on the depth and length of the dependency chains, and then aggregates these to assess the overall technical debt level. It then benchmarks debt, risk, and complexity against the organization’s own estate, while identifying aging frameworks that could pose future security and licensing risks.\n"
+},
+{
+	"uri": "/40_results/05_download.html",
+	"title": "Download",
+	"tags": [],
+	"description": "",
+	"content": " You can download a copy of the report by clicking the download icon top right "
+},
+{
+	"uri": "/60_multi_assessment.html",
+	"title": "Multi App Assessment",
+	"tags": [],
+	"description": "",
+	"content": "Multi App Assessment ReRun the Assessment for the following applications:\nPetclinic archives: - c:\\tmp\\spring-petclinic-3.0.0-SNAPSHOT.jar app: included_packages: - org.springframework.samples.petclinic. DayTrader archives: - c:\\tmp\\dayrader-ee7.ear app: included_packages: - com.ibm.websphere.samples.daytrader. DhanjyothiBank archives: - c:\\tmp\\DhanjyothiBank-0.0.1-SNAPSHOT.war app: included_packages: - com.dhanjyothi. Minecraft archives: - c:\\tmp\\minecraft.jar app: included_packages: - net.minecraft. Do you think any of the sample apps are suitable for refactoring?\n"
+},
+{
+	"uri": "/70_assessmenthub.html",
+	"title": "Assessment Hub",
+	"tags": [],
+	"description": "",
+	"content": "Assessment Hub Go back to the vFunction dashboard (Left menu My Dashboard) and select \u0026lsquo;Assessment Hub\u0026rsquo; top centre Assessment Hub is designed to help Prioritize applications for modernization from a large portfolio of hundreds of applications. The key metrics such as technical debt, application size, etc. are available as filters on the left of the screen.\nApply a filter for technical debt and remove the XS applications from the view Our dataset is small and the open source applications we have used are low size and complexity. Try adding your own application to compare with the sample apps.\n"
+},
+{
+	"uri": "/80_clean.html",
+	"title": "Clean-up",
+	"tags": [],
+	"description": "",
+	"content": "Cleanup In this section, we will clean up the resources created for this workshop by vfunction-workshop package.\nLog-in to the Workshop Linux VM (using PuTTY in the Workshop Windows VM) and do the following command:\nkubectl delete namespace ingress-nginx Log in to your AWS Account and open the AWS CloudShell (icon is on top right toolbar)\nRun the \u0026ldquo;destroy\u0026rdquo; script to delete all the resources\nbash ~/vfunction-workshop/destroy.sh Wait for the script to complete\nDelete the vfunction-workshop-aws-installation.tgz and the vfunction-workshop-aws-installation directory (under your home directory in the cloud shell)\ncd ~ rm -rf ./vfunction-workshop rm vfunction-workshop-aws-installation.tgz "
+},
+{
+	"uri": "/categories.html",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/tags.html",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]

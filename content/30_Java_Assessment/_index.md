@@ -6,7 +6,7 @@ weight: 30
 
 # Application Assessment
 
-Running an assessment offline is quick and non-intrusive as we don’t need to access the application runtime or source code. The assessment can be run from a users workstation.
+Running an assessment offline is quick and non-intrusive as we don’t need to access the application runtime or source code. The assessment can be run from a user's workstation.
 
 For the assessment we need:
 
