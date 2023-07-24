@@ -6,7 +6,7 @@ weight: 75
 
 # .NET Assessment
 
-To access a .NET application the vFunction Controller is needed.
+To run a .NET assessment the vFunction Controller is needed.
 
 For the assessment we need:
 
