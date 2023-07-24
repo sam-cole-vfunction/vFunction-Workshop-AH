@@ -9,7 +9,7 @@
 
     <link rel="icon" href="https://awsmedia.s3.amazonaws.com/favicon.ico" type="image/x-icon" />
 
-    <title>Tags :: English</title>
+    <title>Create a workspace :: English</title>
 
     
     <link href="/css/nucleus.css?1690206937" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/tags.html">
+  <body class="" data-url="/85_net_assessment/03_install_agent.html">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -510,7 +510,7 @@
   
     
     <li data-nav-id="/85_net_assessment.html" title="(Optional) .NET Assessment" class="dd-item
-        
+        parent
         
         
         ">
@@ -580,7 +580,7 @@
  
   
     
-      <li data-nav-id="/85_net_assessment/03_install_agent.html" title="Create a workspace" class="dd-item ">
+      <li data-nav-id="/85_net_assessment/03_install_agent.html" title="Create a workspace" class="dd-item active">
         <a href="/85_net_assessment/03_install_agent.html">
         Create a workspace
         <i class="fas fa-check read-icon"></i>
@@ -735,7 +735,13 @@
             
           
           
-            <a href='/'>Application Modernization Assessment with vFunction Assessment Hub</a> > Tags
+            
+            
+          
+          
+            <a href='/'>Application Modernization Assessment with vFunction Assessment Hub</a> > <a href='/85_net_assessment.html'>(Optional) .NET Assessment</a> > Create a workspace
+          
+        
           
         
           
@@ -746,7 +752,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents"></nav>
     </div>
 </div>
 
@@ -762,24 +768,37 @@
           
             <h1>
               
-                tag ::
-              
-              Tags
+              Create a workspace
             </h1>
           
 
         
 
 
+<p>First we create a new application in vFunction for the application we will assess for Modernization.</p>
+<ol>
+<li>In the vFunction UI, Click the ‘My Dashboard’ Menu top left and select ‘Add Application’ (You might need to close any open pop-ups first using the X)</li>
+</ol>
+<p><img src="/images/AH_New_Menu1.png" alt="New App"></p>
+<ol start="2">
+<li>In the dialog box add the application name, select the type and add the classes to include in the assessment. You can add multiple package names if needed. Only the applications core packages should be included.</li>
+</ol>
+<pre tabindex="0"><code>Name=Fineract1
+Type=Java
+Packages=org.apache.fineract.
+</code></pre><p><img src="/images/AH-Add-1.png" alt="New App"></p>
+<ol start="3">
+<li>
+<p>Click ‘Create’ to add the new application</p>
+</li>
+<li>
+<p>vFunction will create the new application and present a dialog with instructions for adding an agent to the application. This agent can be used to perform both Static and Dynamic analysis. As we are going to run the assessment offline this is not needed so close the dialog with the X top right.</p>
+</li>
+</ol>
+<p><img src="/images/AH-App-DialogFin.png" alt="New App"></p>
 
 
-
-<ul>
-	
-</ul>
-
-
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
 
@@ -1134,6 +1153,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1152,6 +1172,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1189,8 +1212,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/85_net_assessment/02_setup-environment.html" title="Create a workspace"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/00_intro.html" title="Introduction" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/70_assessmenthub.html" title="Assessment Hub" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1222,3 +1247,4 @@
 
   </body>
 </html>
+

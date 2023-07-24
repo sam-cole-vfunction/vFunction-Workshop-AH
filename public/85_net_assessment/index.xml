@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>(Optional) .NET Assessment on English</title>
+    <link>/85_net_assessment.html</link>
+    <description>Recent content in (Optional) .NET Assessment on English</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/85_net_assessment/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create a workspace</title>
+      <link>/85_net_assessment/01_create_workspace.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/85_net_assessment/01_create_workspace.html</guid>
+      <description>First we create a new application in vFunction for the application we will assess for Modernization.
+In the vFunction UI, Click the ‘My Dashboard’ Menu top left and select ‘Add Application’ (You might need to close any open pop-ups first using the X) In the dialog box add the application name, select the type and add the classes to include in the assessment. You can add multiple package names if needed.</description>
+    </item>
+    
+    <item>
+      <title>Create a workspace</title>
+      <link>/85_net_assessment/02_setup-environment.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/85_net_assessment/02_setup-environment.html</guid>
+      <description>First we create a new application in vFunction for the application we will assess for Modernization.
+In the vFunction UI, Click the ‘My Dashboard’ Menu top left and select ‘Add Application’ (You might need to close any open pop-ups first using the X) In the dialog box add the application name, select the type and add the classes to include in the assessment. You can add multiple package names if needed.</description>
+    </item>
+    
+    <item>
+      <title>Create a workspace</title>
+      <link>/85_net_assessment/03_install_agent.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/85_net_assessment/03_install_agent.html</guid>
+      <description>First we create a new application in vFunction for the application we will assess for Modernization.
+In the vFunction UI, Click the ‘My Dashboard’ Menu top left and select ‘Add Application’ (You might need to close any open pop-ups first using the X) In the dialog box add the application name, select the type and add the classes to include in the assessment. You can add multiple package names if needed.</description>
+    </item>
+    
+  </channel>
+</rss>

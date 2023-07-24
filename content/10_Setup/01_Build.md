@@ -14,7 +14,7 @@ weight: 1
 3. Download the workshop installation package from the vFunction portal using the command:
 
 ```bash
-curl -o vfunction-workshop-aws-installation.tgz https://portal.vfunction.com/file/cb568da43a06dd7f05bdd4c00fa75256/3cafd452-bcfa-4a03-b745-1d09bb2355df/vfunction-workshop-aws-installation.tgz
+curl -o vfunction-workshop-aws-installation.tgz https://portal.vfunction.com/file/7d8f8991dbb480aab5e5dd66d6aed90b/4ac2f256-87cc-4369-8729-547a78c948e3/vfunction-workshop-aws-installation.tgz
 ```
 
 4. Unpack the installation package

@@ -11,7 +11,7 @@
 	"title": "Deploy the Workshop",
 	"tags": [],
 	"description": "",
-	"content": "Run the installation package to deploy the Workshop resources Log in to your AWS Account\nOpen the AWS CloudShell (icon is on top right toolbar)\nDownload the workshop installation package from the vFunction portal using the command:\ncurl -o vfunction-workshop-aws-installation.tgz https://portal.vfunction.com/file/cb568da43a06dd7f05bdd4c00fa75256/3cafd452-bcfa-4a03-b745-1d09bb2355df/vfunction-workshop-aws-installation.tgz Unpack the installation package tar zxvf vfunction-workshop-aws-installation.tgz Edit the file ./config/installation.yaml file: vim ~/vfunction-workshop/config/installation.yaml Set the region to which the resources will be deployed- you can use any US region, however, if you want to do the Appendix for using AWS Migration Hub Refactor Spaces, make sure that this service is available in the region you choose by searching Refactor Spaces in this region.\nFill in your org_name (must be shorter than 50 chars) and email (e.g., \u0026ldquo;my company\u0026rdquo; as org_name and \u0026ldquo;myname@company.net\u0026rdquo; as email)\nRun the installation:\nbash ~/vfunction-workshop/install.sh Wait for the script to complete\nSetup Remote Desktop to Workshop Windows VM Switch to the EC2 instances page in the region you set to deploy the workshop\nOpen the EC2 instance with the name starting with workshop-windows (should be in running state) and copy its public IPv4 Address\nOpen your Remote Desktop Protocol (RDP) client and paste the IP as the Host Name or Address\nStart the RDP session. User name: workshop the Password: vFunction2021!\nIf prompted, approve the certificate to access the remote machine.\nYou should now see the Windows Desktop running on the Dev VM.\nAccess the Workshop Linux VM Copy the private IP address of the Worskhop-Linux VM from the AWS console\nIn the Windows VM (Remote Desktop), run PuTTY (icon is on the desktop)\nIn the PuTTY dialog, enter the private IP address of the Linux VM and click Open\nLogin using the same credentials (login: workshop and password:vFunction2021!)\nLogin to the vFunction server The vFunction platform installation was automated by the Workshop Installation package.\nTo login to the platform:\nOpen Chrome in the Windows VM (Remote Desktop)\nType the IP Address of the Linux VM\nLogin with the email you entered in the installation.yaml file. The password is vFunction2021!\nYou should see a screen similar to:\nYou are now ready to proceed.\n"
+	"content": "Run the installation package to deploy the Workshop resources Log in to your AWS Account\nOpen the AWS CloudShell (icon is on top right toolbar)\nDownload the workshop installation package from the vFunction portal using the command:\ncurl -o vfunction-workshop-aws-installation.tgz https://portal.vfunction.com/file/7d8f8991dbb480aab5e5dd66d6aed90b/4ac2f256-87cc-4369-8729-547a78c948e3/vfunction-workshop-aws-installation.tgz Unpack the installation package tar zxvf vfunction-workshop-aws-installation.tgz Edit the file ./config/installation.yaml file: vim ~/vfunction-workshop/config/installation.yaml Set the region to which the resources will be deployed- you can use any US region, however, if you want to do the Appendix for using AWS Migration Hub Refactor Spaces, make sure that this service is available in the region you choose by searching Refactor Spaces in this region.\nFill in your org_name (must be shorter than 50 chars) and email (e.g., \u0026ldquo;my company\u0026rdquo; as org_name and \u0026ldquo;myname@company.net\u0026rdquo; as email)\nRun the installation:\nbash ~/vfunction-workshop/install.sh Wait for the script to complete\nSetup Remote Desktop to Workshop Windows VM Switch to the EC2 instances page in the region you set to deploy the workshop\nOpen the EC2 instance with the name starting with workshop-windows (should be in running state) and copy its public IPv4 Address\nOpen your Remote Desktop Protocol (RDP) client and paste the IP as the Host Name or Address\nStart the RDP session. User name: workshop the Password: vFunction2021!\nIf prompted, approve the certificate to access the remote machine.\nYou should now see the Windows Desktop running on the Dev VM.\nAccess the Workshop Linux VM Copy the private IP address of the Worskhop-Linux VM from the AWS console\nIn the Windows VM (Remote Desktop), run PuTTY (icon is on the desktop)\nIn the PuTTY dialog, enter the private IP address of the Linux VM and click Open\nLogin using the same credentials (login: workshop and password:vFunction2021!)\nLogin to the vFunction server The vFunction platform installation was automated by the Workshop Installation package.\nTo login to the platform:\nOpen Chrome in the Windows VM (Remote Desktop)\nType the IP Address of the Linux VM\nLogin with the email you entered in the installation.yaml file. The password is vFunction2021!\nYou should see a screen similar to:\nYou are now ready to proceed.\n"
 },
 {
 	"uri": "/00_intro.html",
@@ -43,7 +43,7 @@
 },
 {
 	"uri": "/10_setup.html",
-	"title": "Setting Set up",
+	"title": "Getting Set up",
 	"tags": [],
 	"description": "",
 	"content": "\nSetup AWS workshop environment In this section, you will create and deploy the necessary AWS services required for this workshop by running a Terraform package.\nThe below diagram depicts the AWS services provisioned the workshop installation package and their usage (the xxx in the names represent a variable string):\n"
@@ -64,6 +64,27 @@
 },
 {
 	"uri": "/30_java_assessment/01_createworkspace.html",
+	"title": "Create a workspace",
+	"tags": [],
+	"description": "",
+	"content": "First we create a new application in vFunction for the application we will assess for Modernization.\nIn the vFunction UI, Click the ‘My Dashboard’ Menu top left and select ‘Add Application’ (You might need to close any open pop-ups first using the X) In the dialog box add the application name, select the type and add the classes to include in the assessment. You can add multiple package names if needed. Only the applications core packages should be included. Name=Fineract1\rType=Java\rPackages=org.apache.fineract. Click ‘Create’ to add the new application\nvFunction will create the new application and present a dialog with instructions for adding an agent to the application. This agent can be used to perform both Static and Dynamic analysis. As we are going to run the assessment offline this is not needed so close the dialog with the X top right.\n"
+},
+{
+	"uri": "/85_net_assessment/01_create_workspace.html",
+	"title": "Create a workspace",
+	"tags": [],
+	"description": "",
+	"content": "First we create a new application in vFunction for the application we will assess for Modernization.\nIn the vFunction UI, Click the ‘My Dashboard’ Menu top left and select ‘Add Application’ (You might need to close any open pop-ups first using the X) In the dialog box add the application name, select the type and add the classes to include in the assessment. You can add multiple package names if needed. Only the applications core packages should be included. Name=OMS.NET\rType=.net\rPackages=OMS. Click ‘Create’ to add the new application\nvFunction will create the new application and present a dialog with instructions for adding an agent to the application. This agent can be used to perform both Static and Dynamic analysis. As we are going to run the assessment offline this is not needed so close the dialog with the X top right.\n"
+},
+{
+	"uri": "/85_net_assessment/02_setup-environment.html",
+	"title": "Create a workspace",
+	"tags": [],
+	"description": "",
+	"content": "First we create a new application in vFunction for the application we will assess for Modernization.\nIn the vFunction UI, Click the ‘My Dashboard’ Menu top left and select ‘Add Application’ (You might need to close any open pop-ups first using the X) In the dialog box add the application name, select the type and add the classes to include in the assessment. You can add multiple package names if needed. Only the applications core packages should be included. Name=Fineract1\rType=Java\rPackages=org.apache.fineract. Click ‘Create’ to add the new application\nvFunction will create the new application and present a dialog with instructions for adding an agent to the application. This agent can be used to perform both Static and Dynamic analysis. As we are going to run the assessment offline this is not needed so close the dialog with the X top right.\n"
+},
+{
+	"uri": "/85_net_assessment/03_install_agent.html",
 	"title": "Create a workspace",
 	"tags": [],
 	"description": "",
@@ -124,6 +145,13 @@
 	"tags": [],
 	"description": "",
 	"content": "Multi App Assessment ReRun the Assessment for the following applications:\nPetclinic archives: - c:\\tmp\\spring-petclinic-3.0.0-SNAPSHOT.jar app: included_packages: - org.springframework.samples.petclinic. DayTrader archives: - c:\\tmp\\dayrader-ee7.ear app: included_packages: - com.ibm.websphere.samples.daytrader. DhanjyothiBank archives: - c:\\tmp\\DhanjyothiBank-0.0.1-SNAPSHOT.war app: included_packages: - com.dhanjyothi. Minecraft archives: - c:\\tmp\\minecraft.jar app: included_packages: - net.minecraft. Do you think any of the sample apps are suitable for refactoring?\n"
+},
+{
+	"uri": "/85_net_assessment.html",
+	"title": "(Optional) .NET Assessment",
+	"tags": [],
+	"description": "",
+	"content": ".NET Assessment To access a .NET application the vFunction Controller is needed.\nFor the assessment we need:\nThe application binaries e.g. dll\u0026rsquo;s Create a workspace vFunction Windows Controller package "
 },
 {
 	"uri": "/70_assessmenthub.html",
