@@ -22,7 +22,7 @@ https://portal.vfunction.com/file/7e90a278000d53b4e4850f364d809e71/ade0abdf-0523
 4)	Download the vFunction Controller Package: (Use Chrome or another web browser)
 
 ```
-https://portal.vfunction.com/file/5a512fe49f9971e6f1939bbefa24ceb2/1153afe3-6fa2-4df4-ad42-253a15c9e5c0/vfunction-controller-windows-installation.v3.1.1125.zip
+https://portal.vfunction.com/file/a78805e7932acac5f3426ec7885d1f0a/d44cad15-31d7-4cc2-b700-48be6359ab93/vfunction-controller-windows-installation.v3.1.1153.zip
 ```
 
 5)	Mark the downloaded packaged as trusted. Right Click, select properties and Check the trusted box, Click OK
