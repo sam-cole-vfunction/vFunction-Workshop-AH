@@ -20,7 +20,7 @@ app:
 ## DayTrader
 ```
 archives:
-  - c:\tmp\dayrader-ee7.ear
+  - c:\tmp\daytrader-ee7.ear
 app:
   included_packages:
     - com.ibm.websphere.samples.daytrader.
