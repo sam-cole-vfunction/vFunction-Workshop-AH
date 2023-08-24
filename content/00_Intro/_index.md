@@ -6,19 +6,18 @@ weight: 1
 
 # Introduction
 
-In this workshop you will learn how to assess applications either to be Modernized to AWS or applications already migrated to AWS but not yet utilizing serverless technologies.
+In this workshop you will learn how to analyse applications for Architectural Technical Debt either to be Modernized to AWS or applications already migrated to AWS.
 
 ## Workshop Agenda
 * Deploy the vFunction sandbox into your AWS account.
-* Assess an application for modernization.
-* Review the assessment results.
+* Analyse an application for modernization.
+* Review the analyasis results.
 * Compare multiple applications in a portfolio
 
 ## Learning Objectives
-* Learn how to use vFunction Assessment Hub to assess applications.
+* Learn how to use vFunction Architectural Observability Manager to Analyse applications.
 * Identify applications for modernization
 * Define a modernization plan by prioritizing applications
-* Build a business case for modernization
 
 ## Who should attend
 
